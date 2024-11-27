@@ -1,0 +1,29 @@
+# Ignora dependências de Node.js (geralmente a pasta 'node_modules' é gerada ao rodar o 'npm install')
+node_modules/
+
+# Arquivos de configuração de IDE (exemplo para VS Code)
+.vscode/
+.idea/
+
+# Arquivos de log
+*.log
+
+# Arquivos gerados durante a construção ou build do projeto
+/dist
+/build
+/out
+
+# Arquivos de configuração local, como arquivos .env
+.env
+
+# Arquivos de cache do npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos de dependências específicas do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos gerados pelo navegador (caso haja algo assim)
+*.swp

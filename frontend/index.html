@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CCP-RECEPÇÃO</title>
+</head>
+<body>
+    
+    <section class="container">
+        
+        <section class="login">
+            <h2>Login</h2>
+            <form class="login__form">
+                <input type="text" id="userNameInput" class="login__input" placeholder="Digite seu nome" required />
+                <div id="adminChoice"><button class="admin-button">CONTROLE DE RECEPÇÃO</button></div>
+                    
+             
+                <input type="password" id="passwordInput" class="login__input" placeholder="Digite a senha" required />
+                <button type="submit" class="login__button">Entrar</button>
+            </form>
+        </section>
+        <section class="chat">
+            <div class="chat__header">
+                <span class="user-count">Pessoas online: 0</span>
+                <button class="logout-button">Logout</button>
+            </div>
+            <!-- Botão de logout -->
+<div class="chat">
+    <button id="logoutButton" style="display: none;">Sair</button>
+    <!-- O restante do chat permanece igual -->
+</div>
+
+            <section class="chat__messages"></section>
+            <form class="chat__form">
+                <input type="text" class="chat__input" placeholder="Digite uma mensagem" required />
+                <button type="submit" class="chat__button">
+                    <span class="">ENVIAR</span>
+                </button>
+            </form>
+        </section>
+    </section>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
