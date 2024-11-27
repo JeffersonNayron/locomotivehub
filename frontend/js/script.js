@@ -88,7 +88,7 @@ const restoreSession = () => {
         login.style.display = "none";
         chat.style.display = "flex";
 
-        websocket = new WebSocket("ws://localhost:8080");
+        websocket = new WebSocket("wss://chat-recepcao.onrender.com");
         websocket.onmessage = processMessage;
 
         userCountElement.textContent = `Pessoas online: 0`; // Isso será atualizado pelo servidor
